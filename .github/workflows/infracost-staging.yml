@@ -23,7 +23,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v2
       - name: Install terraform
-        uses: hashicorp/setup-terraform@v1
+        uses: hashicorp/setup-terraform@v2
         with:
           terraform_wrapper: false # This is recommended so the `terraform show` command outputs valid JSON
           cli_config_credentials_token: ${{ secrets.TERRAFORM_CLOUD_TOKEN }}
